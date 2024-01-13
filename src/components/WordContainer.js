@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+const initialText = "This is a text to type";
+
 export default function WordContainer() {
-  const [text] = useState("This is a text to type");
   const [color, setColor] = useState("primary");
 
   const handleInput = (event) => {
-    const enteredText = event.target.textContent.trim();
-    const newText = text.substring(0, enteredText.length);
+    const enteredText = event.target.value.trim();
+    const newText = initialText.substring(0, enteredText.length);
 
     let match = true;
 
@@ -23,14 +24,13 @@ export default function WordContainer() {
   return (
     <>
       <div className="relative select-none my-24">
-        <div className="absolute top-1.5 left-[15.5%] text-gray-500 text-lg z-0 px-2 py-1">
-          {text}
+        <div className="absolute top-1.5 left-[15.5%] text-gray-500 text-lg z-1 px-[0.6%] py-[0.2%] text-grey">
+          {initialText}
         </div>
         <div className="flex justify-center">
-          <div
-            contentEditable={true}
-            className={`textarea textarea-${color} w-[70%] h-[40vh] px-3.5 py-2.2 text-lg`}
-            onInput={handleInput}
+          <textarea
+            className={`textarea textarea-${color} w-[70%] h-[40vh] px-[1%] text-lg z-2 text-${color}`}
+            onChange={handleInput}
           />
         </div>
       </div>
