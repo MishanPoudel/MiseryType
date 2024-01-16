@@ -1,21 +1,22 @@
 import React from "react";
+import ThemeChanger from "./ThemeChanger";
 
 export default function Footer() {
   return (
     <>
-      <footer className="flex flex-row items-center bg-transparent text-center text-black btm-nav mb-4">
-        <div className="container px-6 pt-6">
-          <div className="mb-6 flex justify-center">
+      <footer className="bg-transparent text-center text-black btm-nav mb-4">
+        <div className="px-6 pt-6">
+          <div>
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -26,13 +27,13 @@ export default function Footer() {
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -43,13 +44,13 @@ export default function Footer() {
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -64,13 +65,13 @@ export default function Footer() {
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-dark uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -81,13 +82,13 @@ export default function Footer() {
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -98,13 +99,13 @@ export default function Footer() {
             <a
               href="/"
               type="button"
-              className="m-1 h-9 w-9 rounded-full border-2 border-white uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0"
+              className="m-1 h-9 w-9 rounded-full border-2 border-primary uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-15 focus:outline-none focus:ring-0"
               data-te-ripple-init
               data-te-ripple-color="light"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="mx-auto h-full w-4"
+                className="mx-auto h-full w-4 text-primary"
                 fill="currentColor"
                 viewBox="0 0 24 24"
               >
@@ -114,8 +115,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full p-4 text-center text-white">
-          © 2023 Copyright: Misery
+        <div>
+          <ThemeChanger/>
         </div>
       </footer>
     </>
