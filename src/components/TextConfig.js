@@ -5,12 +5,12 @@ export default function TextConfig() {
     <>
       <div className="flex items-center justify-center">
         <div className="inline-flex rounded-md items-center" role="group">
-          <div className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:focus:ring-blue-500 dark:focus:text-white">
-            <button className="mx-3 hover:text-primary">@ punctuation</button>
-            <button className="mx-3 hover:text-primary"># numbers</button>
+          <div className="flex justify-evenly w-full px-4 py-2 text-lg font-medium text-gray-900 dark:text-white light:text-black bg-[#4a5b6e] border-2 border-primary rounded-s-lg">
+            <button className="mx-3 hover:text-primary">@punctuation</button>
+            <button className="mx-3 hover:text-primary">#numbers</button>
           </div>
-          <div className="px-4 flex py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:focus:ring-blue-500 dark:focus:text-white">
-            <button className="flex mx-1 hover:text-primary">
+          <div className="flex justify-evenly bg-[#4a5b6e] w-full px-4 flex py-2 font-medium text-gray-900 text-white border-2 border-primary">
+            <button className="flex mx-1 hover:text-primary items-center">
               <svg
                 width="17px"
                 height="17px"
@@ -25,7 +25,7 @@ export default function TextConfig() {
                 />
                 <path
                   d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                  stroke="#ffffff"
+                  stroke="primary"
                   stroke-width="2"
                 />
                 <path
@@ -36,11 +36,11 @@ export default function TextConfig() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <div className="mx-1 self-center text-sm font-semibold whitespace-nowrap">
+              <div className="mx-1 self-center text-lg font-semibold whitespace-nowrap">
                 time
               </div>
             </button>
-            <button className="flex mx-1 hover:text-primary">
+            <button className="flex mx-1 hover:text-primary items-center">
               <svg
                 width="16px"
                 height="16px"
@@ -56,11 +56,11 @@ export default function TextConfig() {
                   stroke-linejoin="round"
                 />
               </svg>
-              <div className="mx-1 self-center text-sm font-semibold whitespace-nowrap">
+              <div className="mx-1 self-center text-lg font-semibold whitespace-nowrap">
                 words
               </div>
             </button>
-            <button className="flex mx-1 hover:text-primary">
+            <button className="flex mx-1 hover:text-primary items-center">
               <svg
                 width="20px"
                 height="20px"
@@ -75,11 +75,11 @@ export default function TextConfig() {
                   fill="#ffffff"
                 />
               </svg>
-              <div className="mx-1 self-center text-sm font-semibold whitespace-nowrap">
+              <div className="mx-1 self-center text-lg font-semibold whitespace-nowrap">
                 words
               </div>
             </button>
-            <button className="flex mx-1 hover:text-primary">
+            <button className="flex mx-1 hover:text-primary items-center">
               <svg
                 width="17px"
                 height="17px"
@@ -98,11 +98,11 @@ export default function TextConfig() {
                   <path d="M 9.5899 50.2070 L 46.4102 50.2070 C 49.9257 50.2070 52.1289 47.6758 52.1289 44.4883 C 52.1289 43.5273 51.8947 42.5664 51.3791 41.6758 L 32.9336 8.6758 C 31.8789 6.7773 29.9570 5.7930 28.0117 5.7930 C 26.0899 5.7930 24.1211 6.7773 23.0664 8.6758 L 4.6446 41.6992 C 4.1289 42.5898 3.8711 43.5273 3.8711 44.4883 C 3.8711 47.6758 6.0977 50.2070 9.5899 50.2070 Z M 28.0117 42.0273 C 24.4258 42.0273 21.4961 39.2148 21.4961 35.6523 C 21.4961 33.5899 22.4805 31.6445 23.4648 29.8399 L 27.4024 22.5742 C 27.5664 22.3164 27.7305 22.1523 28.0117 22.1523 C 28.2930 22.1523 28.5039 22.3164 28.6211 22.5742 L 32.5586 29.8399 C 33.5195 31.6445 34.5273 33.5899 34.5273 35.6523 C 34.5273 39.2148 31.5977 42.0273 28.0117 42.0273 Z"></path>
                 </g>
               </svg>
-              <div className="mx-1 self-center text-sm font-semibold whitespace-nowrap">
+              <div className="mx-1 self-center text-lg font-semibold whitespace-nowrap">
                 zen
               </div>
             </button>
-            <button className="flex mx-1 hover:text-primary">
+            <button className="flex mx-1 hover:text-primary items-center">
               <svg
                 width="17px"
                 height="17px"
@@ -128,12 +128,12 @@ export default function TextConfig() {
                   ></path>{" "}
                 </g>
               </svg>
-              <div className="mx-1 self-center text-sm font-semibold whitespace-nowrap">
+              <div className="mx-1 self-center text-lg font-semibold whitespace-nowrap">
                 custom
               </div>
             </button>
           </div>
-          <div className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:hover:text-white dark:focus:ring-blue-500 dark:focus:text-white">
+          <div className="flex justify-evenly w-full px-4 bg-[#4a5b6e] py-2 text-lg font-medium text-gray-900 text-white border-2 border-primary rounded-r-lg ">
             <button className="mx-3 hover:text-primary">10</button>
             <button className="mx-3 hover:text-primary">25</button>
             <button className="mx-3 hover:text-primary">50</button>
